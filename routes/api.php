@@ -20,3 +20,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/send', 'TestController@store');
 Route::get('/get', 'TestController@index');
+
+Route::post('store-order', 'ReservationController@store');
