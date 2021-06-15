@@ -14,7 +14,8 @@ class ReservationController extends Controller
      */
     public function index()
     {
-        $reservations = Reservation::paginate(10);
+        // $reservations = Reservation::orderBy('state_order')->paginate(10);
+        $reservations = Reservation::all();
         return view('welcome', [
             'reservations' => $reservations
         ]);

@@ -137,66 +137,38 @@
             <!--shape image end-->
         </section>
         <!--hero section end-->
-
-        <!--promo section start-->
-        <section class="promo-section ptb-100">
+        <!--counter section start-->
+        <section class="counter-section gradient-bg ptb-40">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-8">
-                        <div class="section-heading text-center">
-                            <h2>Why Apdash Different?</h2>
-                            <p>Uniquely repurpose strategic core competencies with progressive content. Assertively transition ethical imperatives and collaborative manufactured products. </p>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="text-white p-2 count-data text-center my-3">
+                            <span class="fas fa-users icon-size-lg mb-2"></span>
+                            <h3 class="count-number mb-1 text-white font-weight-bolder">{{ count($reservations) }}</h3>
+                            <span>Total de pedidos</span>
                         </div>
                     </div>
-                </div>
-                <div class="row justify-content-md-center justify-content-sm-center">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 single-promo-card single-promo-hover text-center p-2 mt-4">
-                            <div class="card-body">
-                                <div class="pb-2">
-                                    <span class="fas fa-cubes icon-size-lg color-primary"></span>
-                                </div>
-                                <div class="pt-2 pb-3">
-                                    <h5>Fully functional</h5>
-                                    <p class="mb-0">Phosfluorescently target bleeding sources through viral methodsp progressively expedite empowered.</p>
-                                </div>
-                            </div>
+                    <div class="col-md">
+                        <div class="text-white p-2 count-data text-center my-3">
+                            <span class="fas fa-smile icon-size-lg mb-2"></span>
+                            <h3 class="count-number mb-1 text-white font-weight-bolder">{{ count($reservations->where('state_order', 0)) }}</h3>
+                            <span>Pedidos pendientes</span>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 single-promo-card single-promo-hover text-center p-2 mt-4">
-                            <div class="card-body">
-                                <div class="pb-2">
-                                    <span class="fas fa-headset icon-size-lg color-primary"></span>
-                                </div>
-                                <div class="pt-2 pb-3">
-                                    <h5>24/7 Live Chat</h5>
-                                    <p class="mb-0">Enthusiastically productivate interactive interfaces after energistically scale client-centered catalysts.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 single-promo-card single-promo-hover text-center p-2 mt-4">
-                            <div class="card-body">
-                                <div class="pb-2">
-                                    <span class="fas fa-lock icon-size-lg color-primary"></span>
-                                </div>
-                                <div class="pt-2 pb-3">
-                                    <h5>Secure Data</h5>
-                                    <p class="mb-0">Synergistically architect virtual content solutions. Monotonectally communicate cooperative solutions.</p>
-                                </div>
-                            </div>
+                    <div class="col-md">
+                        <div class="text-white p-2 count-data text-center my-3">
+                            <span class="fas fa-mug-hot icon-size-lg mb-2"></span>
+                            <h3 class="count-number mb-1 text-white font-weight-bolder">{{ count($reservations->where('state_order', 1)) }}</h3>
+                            <span>Pedidos atendídos</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--promo section end-->
+        <!--counter section end-->
 
         <!--about us section start-->
-        <!--about us section start-->
-        <section id="about" class="ptb-100 gray-light-bg ">
+        {{-- <section id="about" class="ptb-100 gray-light-bg ">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-12 col-lg-6">
@@ -231,211 +203,43 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!--about us section end-->
-        <!--about us section end-->
-        <!--counter section start-->
-        <section class="counter-section gradient-bg ptb-40">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="text-white p-2 count-data text-center my-3">
-                            <span class="fas fa-users icon-size-lg mb-2"></span>
-                            <h3 class="count-number mb-1 text-white font-weight-bolder">21023</h3>
-                            <span>Customers</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="text-white p-2 count-data text-center my-3">
-                            <span class="fas fa-cloud-download-alt icon-size-lg mb-2"></span>
-                            <h3 class="count-number mb-1 text-white font-weight-bolder">44023</h3>
-                            <span>Downloads</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="text-white p-2 count-data text-center my-3">
-                            <span class="fas fa-smile icon-size-lg mb-2"></span>
-                            <h3 class="count-number mb-1 text-white font-weight-bolder">35023</h3>
-                            <span>Satisfied</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="text-white p-2 count-data text-center my-3">
-                            <span class="fas fa-mug-hot icon-size-lg mb-2"></span>
-                            <h3 class="count-number mb-1 text-white font-weight-bolder">2323</h3>
-                            <span>Cup of Coffee</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--counter section end-->
 
         <section class="our-blog-section ptb-100">
             <div class="container">
+                <h2>Lista de pedidos</h2>
                 <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-blog-card card gray-light-bg border-0 shadow-sm my-3">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/1.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>24</strong>
-                                    <small>Apr</small>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="h5 mb-2 card-title"><a href="#">Appropriately productize fully</a></h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk.</p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-blog-card card gray-light-bg border-0 shadow-sm my-3">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/2.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>24</strong>
-                                    <small>Apr</small>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="h5 mb-2 card-title"><a href="#">Quickly formulate backend</a></h3>
-                                <p class="card-text">Synergistically engage effective ROI after customer directed
-                                    partnerships.</p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-blog-card card gray-light-bg border-0 shadow-sm my-3">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/3.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>24</strong>
-                                    <small>Apr</small>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="h5 mb-2 card-title"><a href="#">Objectively extend extensive</a></h3>
-                                <p class="card-text">Holisticly mesh open-source leadership rather than proactive
-                                    users. </p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
+                    @foreach ($reservations as $reservation)
                     <div class="col-md-6 col-lg-4">
                         <div class="single-blog-card card gray-light-bg border-0 shadow-sm my-3">
                             <div class="blog-img position-relative">
                                 <img src="assets/img/blog/4.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>24</strong>
-                                    <small>Apr</small>
+                                <div class="meta-date {{ $reservation->state_order == 1?'bg-success':'bg-danger' }}">
+                                    {{-- <strong>24</strong>
+                                    <small>Apr</small> --}}
+                                    @if ($reservation->state_order == 1)
+                                        <i class="fas fa-check" style="margin-top: 12px; font-size: 26px;"></i>
+                                    @else
+                                        <i class="fas fa-pause-circle" style="margin-top: 12px; font-size: 26px;"></i>
+                                    @endif
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="h5 mb-2 card-title"><a href="#">Objectively extend extensive</a></h3>
-                                <p class="card-text">Holisticly mesh open-source leadership rather than proactive
-                                    users. </p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
+                                <h3 class="h5 mb-2 card-title"><a href="#">{{ $reservation->product_name }}</a></h3>
+                                <p class="card-text">
+                                    <li class="list-inline-item"><i class="fas fa-heart mr-2 text-danger"></i><span>Número de mesa: </span>
+                                        {{ $reservation->table_number }}
+                                    </li>
+                                    <li class="list-inline-item"><i class="fas fa-money-check-alt mr-2 text-success"></i><span>Precio: </span>
+                                        {{ $reservation->product_price }}
+                                    </li>
+                                </p>
+                                {{-- <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a> --}}
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-blog-card card gray-light-bg border-0 shadow-sm my-3">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/5.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>24</strong>
-                                    <small>Apr</small>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="h5 mb-2 card-title"><a href="#">Objectively extend extensive</a></h3>
-                                <p class="card-text">Holisticly mesh open-source leadership rather than proactive
-                                    users. </p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-blog-card card gray-light-bg border-0 shadow-sm my-3">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/6.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>24</strong>
-                                    <small>Apr</small>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="h5 mb-2 card-title"><a href="#">Objectively extend extensive</a></h3>
-                                <p class="card-text">Holisticly mesh open-source leadership rather than proactive
-                                    users. </p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
 
                 <!--pagination start-->
@@ -445,9 +249,9 @@
                             <ul class="pagination justify-content-center">
                                 <li class="page-item"><a class="page-link" href="#"><span class="ti-angle-left"></span></a></li>
                                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                {{-- <li class="page-item"><a class="page-link" href="#">2</a></li>
                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li> --}}
                                 <li class="page-item"><a class="page-link" href="#"><span class="ti-angle-right"></span></a></li>
                             </ul>
                         </nav>
@@ -500,124 +304,12 @@
                         <img src="assets/img/logo-white.png" alt="logo" class="img-fluid">
                     </a>
                     <br>
-                    <p>Dynamically re-engineer high standards in functiona with alternative paradigms. Conveniently monetize resource maximizing initiatives.</p>
-                    <div class="list-inline social-list-default background-color social-hover-2 mt-2">
-                        <li class="list-inline-item"><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></li>
-                        <li class="list-inline-item"><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-8">
-                    <div class="row mt-0">
-                        <div class="col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
-                            <h6 class="text-uppercase">Resources</h6>
-                            <ul>
-                                <li>
-                                    <a href="#">Help</a>
-                                </li>
-                                <li>
-                                    <a href="#">Events</a>
-                                </li>
-                                <li>
-                                    <a href="#">Live sessions</a>
-                                </li>
-                                <li>
-                                    <a href="#">Open source</a>
-                                </li>
-                                <li>
-                                    <a href="#">Documentation</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
-                            <h6 class="text-uppercase">Products</h6>
-                            <ul>
-                                <li>
-                                    <a href="#">Pricing</a>
-                                </li>
-                                <li>
-                                    <a href="#">Navigation</a>
-                                </li>
-                                <li>
-                                    <a href="#">AI Studio</a>
-                                </li>
-                                <li>
-                                    <a href="#">Page Speed </a>
-                                </li>
-                                <li>
-                                    <a href="#">Performance</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
-                            <h6 class="text-uppercase">Company</h6>
-                            <ul>
-                                <li>
-                                    <a href="#">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Careers</a>
-                                </li>
-                                <li>
-                                    <a href="#">Customers</a>
-                                </li>
-                                <li>
-                                    <a href="#">Community</a>
-                                </li>
-                                <li>
-                                    <a href="#">Our Team</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3">
-                            <h6 class="text-uppercase">Support</h6>
-                            <ul>
-                                <li>
-                                    <a href="#">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="#">Sells</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact Support</a>
-                                </li>
-                                <li>
-                                    <a href="#">Network Status</a>
-                                </li>
-                                <li>
-                                    <a href="#">Product Services</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <p>RAV, proyecto.</p>
                 </div>
             </div>
         </div>
         <!--end of container-->
     </footer>
-    <!--footer bottom copyright start-->
-    <div class="footer-bottom py-3 gray-light-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-7">
-                    <div class="copyright-wrap small-text">
-                        <p class="mb-0">&copy; ThemeTags Design Agency, All rights reserved</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5">
-                    <div class="terms-policy-wrap text-lg-right text-md-right text-left">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a class="small-text" href="#">Terms</a></li>
-                            <li class="list-inline-item"><a class="small-text" href="#">Security</a></li>
-                            <li class="list-inline-item"><a class="small-text" href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--footer bottom copyright end-->
     <!--footer section end-->
     <!--scroll bottom to top button start-->
     <div class="scroll-top scroll-to-target primary-bg text-white" data-target="html">
