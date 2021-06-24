@@ -46,52 +46,8 @@
 
                 <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto menu">
-                        <li><a href="#about" class="page-scroll">About</a></li>
-                        <li><a href="#features" class="page-scroll">Features</a></li>
-                        <li><a href="#" class="dropdown-toggle">Pages</a>
-                            <ul class="sub-menu">
-                                <li><a href="#" class="dropdown-toggle-inner">Login & Sign Up</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="login.html">Login Page</a></li>
-                                        <li><a href="sign-up.html">Signup Page</a></li>
-                                        <li><a href="password-reset.html">Reset Password</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="dropdown-toggle-inner">Utilities</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="faq.html">FAQ Page</a></li>
-                                        <li><a href="404.html">404 Page</a></li>
-                                        <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        <li><a href="thank-you.html">Thank You Page</a></li>
-                                        <li><a href="download.html">Download Page <span class="badge accent-bg text-white">New</span></a></li>
-                                        <li><a href="review.html">Review Page <span class="badge accent-bg text-white">New</span></a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="dropdown-toggle-inner">Team</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="team.html">Our Team Members</a></li>
-                                        <li><a href="team-single.html">Team Member Profile</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="dropdown-toggle-inner">Our Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog-default.html">Blog Grid</a></li>
-                                        <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
-                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                        <li><a href="blog-single-left-sidebar.html">Details Left Sidebar</a></li>
-                                        <li><a href="blog-single-right-sidebar.html">Details Right Sidebar</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about-us.html">About Us </a></li>
-                                <li><a href="contact-us.html">Contact Us</a></li>
-                                <li><a href="sale-invoice.html">Sale Invoice <span class="badge badge-danger">New</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#screenshots" class="page-scroll">Screenshots</a></li>
-                        <li><a href="#process" class="page-scroll">Process</a></li>
-                        <li><a href="#pricing" class="page-scroll">Pricing</a></li>
-                        <li><a href="#contact" class="page-scroll">Contact</a></li>
+                        <li><a href="#about" class="page-scroll">Inicio</a></li>
+                        <li><a href="#features" class="page-scroll">Pedidos</a></li>
                     </ul>
                 </div>
             </div>
@@ -99,7 +55,7 @@
     </header>
     <!--header section end-->
 
-    <div class="main">
+    <div class="main" id="about">
 
         <!--hero section start-->
         <section class="position-relative overflow-hidden hero-section-3 ptb-100">
@@ -138,7 +94,7 @@
         </section>
         <!--hero section end-->
         <!--counter section start-->
-        <section class="counter-section gradient-bg ptb-40">
+        <section class="counter-section gradient-bg ptb-40" id="features">
             <div class="container">
                 <div class="row">
                     <div class="col-md">
@@ -263,7 +219,7 @@
         </section>
 
         <!--screenshots section start-->
-        <section id="screenshots" class="screenshots-section pb-100  ">
+        {{-- <section id="screenshots" class="screenshots-section pb-100  ">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-9 col-lg-8">
@@ -273,7 +229,6 @@
                         </div>
                     </div>
                 </div>
-                <!--start app screen carousel-->
                 <div class="screenshot-wrap">
                     <div class="screenshot-frame"></div>
                     <div class="screen-carousel owl-carousel owl-theme dot-indicator">
@@ -285,9 +240,8 @@
                         <img src="assets/img/06.jpg" class="img-fluid" alt="screenshots" />
                     </div>
                 </div>
-                <!--end app screen carousel-->
             </div>
-        </section>
+        </section> --}}
 
 
         <!--screenshots section end-->
